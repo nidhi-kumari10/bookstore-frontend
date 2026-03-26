@@ -13,7 +13,7 @@ const Freebook = () => {
   useEffect(()=>{
          const getBook = async()=>{
             try {
-         const response = await axios.get("http://localhost:4001/book");
+         const response = await axios.get(`${import.meta.env.VITE_API_URL}/book`);
         
          setBook(response.data.filter((book)=>book?.category==="Free"));
             } catch (error) {
