@@ -15,7 +15,7 @@ const Login = () => {
  const onSubmit = async (data) => {
   try {
     const userInfo = {
-      email: data.emailId,
+      emailId: data.emailId,
       password: data.password
     };
 

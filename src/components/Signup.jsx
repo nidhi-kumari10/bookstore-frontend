@@ -20,8 +20,8 @@ const Signup = () => {
    const onSubmit = async (data) => {
   try {
     const userInfo = {
-      fullName: data.fullname,
-      email: data.emailId,
+      fullname: data.fullname,
+      emailId: data.emailId,
       password: data.password
     };
 
